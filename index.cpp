@@ -22,23 +22,27 @@ int main()
 	switch (choice){
 		case 1:
 			cout<<"Excellent!" <<endl;
-			
+			sumOfOrders += 40;
 			break;
 		case 2:
 		    cout<<"Excellent!"	<<endl;
 		    cin>>choice;
+			sumOfOrders += 50;	
 		    break;
 		case 3:
 			cout<<"Excellent!" <<endl;
 			cin>>choice;
+			sumOfOrders += 60;
 			break;
 		case 4:
 			cout<<"Excellent!" <<endl;
 			cin>>choice;
+			sumOfOrders += 40;
 			break;
 		case 5:
 			cout<<"Excellent!" <<endl;
 			cin>>choice;
+			sumOfOrders += 60;
 			break;
 		case 6:
 				exitBanner();
@@ -55,6 +59,7 @@ int main()
 	}
     
     while(quit == false);{
+	    cout<<"Your order Total is: P"<<sumOfOrders<<endl;     
     return 0;
 	}
 }
